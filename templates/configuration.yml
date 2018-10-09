@@ -1,0 +1,13 @@
+apiVersion: kubeadm.k8s.io/v1alpha3
+kind: JoinConfiguration
+discoveryTokenAPIServers:
+  - "${discovery_server}"
+discoveryToken: "${discovery_token}"
+tlsBootstrapToken: "${discovery_token}"
+discoveryTokenCACertHashes:
+  - "${discovery_token_ca_cert_hash}"
+nodeRegistration:
+  kubeletExtraArgs:
+    node-ip: "${node_ip}"
+    node-labels: "${node_labels}"
+    register-with-taints: "${node_taints}"
