@@ -10,3 +10,5 @@
 
 # IDE's
 .idea
+example/*.log
+example/kubeconfig

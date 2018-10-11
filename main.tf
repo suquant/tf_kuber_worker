@@ -9,7 +9,7 @@ variable "private_ips" {
 }
 
 variable "kubernetes_version" {
-  default = "1.12"
+  default = "1.12.1"
 }
 
 variable "kubernetes_cni_version" {
