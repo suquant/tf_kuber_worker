@@ -65,7 +65,6 @@ resource "null_resource" "kubernetes" {
     inline = [
       "kubeadm reset --force",
       "kubeadm join --config /etc/kubernetes/configuration.yml",
-      "iptables -t nat -F",
     ]
   }
 }
